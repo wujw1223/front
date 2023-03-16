@@ -4,15 +4,19 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import { defineComponent, ref } from 'vue'
+import HelloWorld from './components/HelloWorld.vue'
 
 export default defineComponent({
-  name: "App",
+  name: 'App',
   components: {
-    HelloWorld,
-  },
-});
+    HelloWorld
+  }
+})
+const flag = ref(false)
+console.log(flag.value)
+flag.value = true
+console.log(flag.value)
 </script>
 
 <style lang="less">
