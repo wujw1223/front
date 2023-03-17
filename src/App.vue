@@ -1,17 +1,12 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
 
 export default defineComponent({
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 })
 const flag = ref(false)
 console.log(flag.value)
