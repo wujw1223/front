@@ -1,6 +1,6 @@
 import { createStore, Store } from 'vuex'
 
-const store: Store<any> = createStore({
+const store: Store<{ title: string }> = createStore({
   state: () => {
     return {
       title: 'wjw'
